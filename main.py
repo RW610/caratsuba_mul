@@ -2,7 +2,7 @@ def karatsuba(num1: int, num2: int) -> int:
     if num1 < 10 or num2 < 10:
         return num1 * num2
     
-    n = max(len(str(num1)), len(str(num2)))
+    n = max(len(str(num1, num2)))
     half = n // 2
     
     a, b = divmod(num1, 10 ** half)

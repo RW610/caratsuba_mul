@@ -15,5 +15,8 @@ def karatsuba(num1: int, num2: int) -> int:
     return (ac * (10 ** (2 * half))) + (ad_bc * (10 ** half)) + bd
 
 
-mul = karatsuba(10, 100) 
-print(mul)
+if __name__ == "__main__":
+    a = int(input('a? - '))
+    b = int(input('b? - '))
+    mul = karatsuba(a, b) 
+    print(mul)
